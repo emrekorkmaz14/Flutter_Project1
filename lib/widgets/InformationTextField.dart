@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+
+class InformationTextField extends StatelessWidget {
+  const InformationTextField( {
+    Key? key,
+      required this.text, required this.icon,
+  }) : super(key: key);
+
+  
+  final String text;
+  final Icon icon;
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 50,vertical: 5),
+            child: TextField(
+              cursorColor: Colors.blueGrey,
+              showCursor: true,
+              decoration: InputDecoration(
+                focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blueGrey)),
+                enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blueGrey)),
+                hintText: text,
+                icon: icon,
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
