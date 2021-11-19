@@ -28,7 +28,7 @@ class InformationPassTextField extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.blueGrey)),
                 enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueGrey)),
-                hintText: text,
+                hintText: text,hintStyle: TextStyle(fontWeight: FontWeight.bold),
                 icon: icon,
               ),
             ),

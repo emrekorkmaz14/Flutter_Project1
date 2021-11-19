@@ -27,16 +27,13 @@ class _registerWithSocialState extends State<registerWithSocial> {
           Container(
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.all(8),
-            height: 50,
-            width: 50,
+            height: 60,
+            width: 60,
             decoration: BoxDecoration(
-              color: Colors.white,
               boxShadow: [
                 BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
-                    spreadRadius: 5,
-                    blurRadius: 5,
-                    offset: Offset(0, 3))
+                    color: Color(0xffeaf1ff),
+                    ),
               ],
               borderRadius: BorderRadius.circular(10),
             ),

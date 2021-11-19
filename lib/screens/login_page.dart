@@ -19,9 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: true,
       title: 'urBasics.',
       home: Scaffold(
+        backgroundColor: Color(0xffFFFFFF),
       
         appBar: AppBar(
-          backgroundColor: Colors.white60,
+          backgroundColor: Color(0xff293559),
           title: Row(
             children: [
               Text(
@@ -29,16 +30,16 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 19,
                     fontWeight: FontWeight.w500,
-                    color: Colors.blueGrey),
+                    color: Colors.grey.shade300),
               ),
               Text(
                 'urBasics.',
                 style: TextStyle(
-                    fontSize: 19,
+                    fontSize: 22,
                     fontWeight: FontWeight.w900,
-                    color: Colors.blueGrey.shade700),
+                    color: Colors.amber.shade800,
               ),
-            ],
+              )],
           ),
         ),
         body: LoginPage(),
@@ -68,13 +69,13 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.symmetric(vertical: 50),
             child: Text(
               'Login to \nfind the best products.',
-              style: TextStyle(fontSize: 27, fontWeight: FontWeight.w800),
+              style: TextStyle(fontSize: 27, fontWeight: FontWeight.w800,color: Color(0xff293559),),
             ),
           ),
-          InformationTextField(text: "User Name", icon: Icon(Icons.person,color: Colors.redAccent,)),
+          InformationTextField(text: "User Name", icon: Icon(Icons.person,color: Colors.amber.shade800,)),
           InformationPassTextField(
             
-            icon: Icon(Icons.lock,color: Colors.redAccent,),
+            icon: Icon(Icons.lock,color: Colors.amber.shade800),
             text: "Password",
             ),
           Padding(
@@ -88,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
               },
               child: Text(
                 'Forgot Password',
-                style: TextStyle(fontSize: 12, color: Colors.redAccent,fontWeight: FontWeight.bold,),
+                style: TextStyle(fontSize: 13, color: Colors.amber.shade800,fontWeight: FontWeight.bold,),
               ),
             ),
           ),
@@ -105,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Dont have an account?'),
+              Text('Dont have an account?',),
               TextButton(
                 onPressed: () {
                   Navigator.push(context,
@@ -113,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                 },
                 child: Text(
                   'Sign Up',
-                  style: TextStyle(fontSize: 15, color: Colors.redAccent,fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 15, color: Colors.amber.shade800,fontWeight: FontWeight.bold),
                 ),
               ),
             ],

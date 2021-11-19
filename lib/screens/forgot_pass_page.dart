@@ -11,14 +11,14 @@ class ForgotPasswordPage extends StatelessWidget {
       title: 'Login',
       home: Scaffold(
         appBar: AppBar(
-                  backgroundColor: Colors.white60,
+                  backgroundColor: Color(0xff293559),
                   leading: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     icon: Icon(
                       Icons.arrow_back_ios,
-                      color: Colors.redAccent,
+                      color: Colors.amber.shade800,
                     ),
                   ),
                 ),
@@ -33,11 +33,12 @@ class ForgotPasswordPage extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 27,
                       fontWeight: FontWeight.w800,
+                      color: Color(0xff293559)
                     ),
                   ),
                 ),
                 
-                InformationTextField(text: "E-mail", icon: Icon(Icons.mail,color: Colors.redAccent,)),
+                InformationTextField(text: "E-mail", icon: Icon(Icons.mail,color: Colors.amber.shade800,)),
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
                   child: Text(
@@ -64,7 +65,7 @@ class ForgotPasswordPage extends StatelessWidget {
                       },
                       child: Text(
                         'Login here',
-                        style: TextStyle(fontSize: 15, color: Colors.redAccent),
+                        style: TextStyle(fontSize: 15, color: Colors.amber.shade800),
                       ),
                     ),
                   ],

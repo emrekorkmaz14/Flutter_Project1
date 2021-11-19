@@ -19,14 +19,14 @@ class _SignUpPageState extends State<SignUpPage> {
       title: 'Login',
       home: Scaffold(
         appBar: AppBar(
-                  backgroundColor: Colors.white60,
+                  backgroundColor: Color(0xff293559),
                   leading: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     icon: Icon(
                       Icons.arrow_back_ios,
-                      color: Colors.redAccent,
+                      color: Colors.amber.shade800,
                     ),
                   ),
                 ),
@@ -41,22 +41,23 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: TextStyle(
                       fontSize: 27,
                       fontWeight: FontWeight.w800,
+                      color: Color(0xff293559),
                     ),
                   ),
                 ),
                 InformationTextField(
                   text: "Full Name", 
-                  icon: Icon(Icons.person,color: Colors.redAccent,),
+                  icon: Icon(Icons.person,color: Colors.amber.shade800,),
                   ),
                   InformationTextField(
                   text: "User Name", 
-                  icon: Icon(Icons.person_pin,color: Colors.redAccent,),
+                  icon: Icon(Icons.person_pin,color: Colors.amber.shade800,),
                   ),
                   InformationTextField(
                   text: "Phone", 
-                  icon: Icon(Icons.phone,color: Colors.redAccent,),
+                  icon: Icon(Icons.phone,color: Colors.amber.shade800,),
                   ),
-                  InformationPassTextField(text: "Password", icon: Icon(Icons.lock,color: Colors.redAccent,)),
+                  InformationPassTextField(text: "Password", icon: Icon(Icons.lock,color: Colors.amber.shade800,)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -77,7 +78,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       },
                       child: Text(
                         'Login',
-                        style: TextStyle(fontSize: 15, color: Colors.redAccent),
+                        style: TextStyle(fontSize: 15, color: Colors.amber.shade800),
                       ),
                     ),
                   ],

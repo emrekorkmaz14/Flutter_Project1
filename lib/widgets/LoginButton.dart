@@ -20,7 +20,7 @@ class LoginButton extends StatelessWidget {
                 fontWeight: FontWeight.w800),
           ),
           style: ElevatedButton.styleFrom(
-              primary: Colors.blueGrey),
+              primary: Color(0xff293559),),
         ),
       ),
     );
