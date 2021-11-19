@@ -1,5 +1,5 @@
 # urBasics
-- Design by me
+- Design by @emrekorkmaz14
 
 # Used Packages
 - flutter.svg
